@@ -1,0 +1,11 @@
+# TEST environment
+
+replicaCount: 3
+
+environment: test
+
+image:
+  tag: "latest"
+
+service:
+  type: LoadBalancer
