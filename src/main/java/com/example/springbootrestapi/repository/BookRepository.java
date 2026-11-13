@@ -7,6 +7,5 @@ import org.springframework.stereotype.Repository;
 //This is a repository class
 @Repository
 public interface BookRepository extends JpaRepository<Book, Long> {
-    System.out.ln("Hey");
-    // We don't need to add custom method for this example. The methods available in JpaRepository are sufficient.
+     // We don't need to add custom method for this example. The methods available in JpaRepository are sufficient.
 }
