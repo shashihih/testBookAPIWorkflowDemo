@@ -50,6 +50,11 @@ class BookControllerTest {
 
         verify(bookService).saveBook(any(Book.class));
     }
+    @Test
+    void createBookAcceptsPositivePrice() throws Exception {
+        // Trigger CI workflow test update
+        when(bookService.saveBook(any(Book.class)))
+            .thenAnswer(invocation -> invocation.getArgument(0));
 
     @Test
     void createBookRejectsZeroPrice() throws Exception {
